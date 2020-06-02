@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button color = "primary" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Details du port {{ data.nom }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding">
+<ion-card no-margin>
+    <ion-card-title color="primary">         
+            <img src="{{data.photo}}">     
+        <ion-item class="my-item-descriptif" lines="none">{{data.descriptif}}</ion-item> 
+      </ion-card-title>
+</ion-card>       
+<ion-card>
+   
+    <ion-card-title color="primary">
+      CAPITAINERIE
+      <div id="item-div"> 
+        <ion-item lines="none">Adresse : {{data.capitainerie.adresse }}</ion-item>  
+        <ion-item lines="none">Tel     : {{ data.capitainerie.tel }}</ion-item>
+        <ion-item lines="none">Portable: {{ data.capitainerie.portable }}</ion-item>
+        <ion-item lines="none">Mail    : {{ data.capitainerie.mail }}</ion-item>
+        <ion-item lines="none">Web     : {{data.capitainerie.website}}</ion-item>     
+        <ion-item lines="none">Vhf     : {{ data.capitainerie.vhf }}</ion-item>
+        <ion-item lines="none">Horaires: {{ data.capitainerie.horaireEte }}</ion-item>
+        <ion-item lines="none">Horaires: {{ data.capitainerie.horaireHiver }}</ion-item>
+        <ion-item lines="none">Position Gps: {{ data.capitainerie.position }}</ion-item>
+      </div>
+     </ion-card-title>
+</ion-card>        
+<ion-card no-margin>
+        <ion-card-title color="primary">
+            ACCUEIL 
+            
+             <ion-item lines="none">Places aux pontons : {{ data.accueil.pontons }} </ion-item>     
+             <ion-item lines="none">Places aux corps mort : {{ data.accueil.corpsMort }} </ion-item>
+             <ion-item lines="none">Places au port à sec : {{ data.accueil.portSec }} </ion-item>
+             <ion-item lines="none">Places visiteurs : {{ data.accueil.visiteur }} </ion-item>
+             <ion-item lines="none">Localisation des places visiteurs : {{ data.accueil.localisationVisiteur }} </ion-item>    
+            
+         </ion-card-title>     
+</ion-card>   
+<ion-card no-margin>
+         <ion-card-title color="primary">
+            ACCES 
+            <ion-item lines="none">Acces au port : {{ data.acces.horaire }}</ion-item>
+            <ion-item lines="none">Longueur maximale : {{ data.acces.longueurBateau }}</ion-item>  
+            <ion-item lines="none">Tirant d'eau : {{ data.acces.tirantEau }}</ion-item> 
+        </ion-card-title>
+</ion-card>  
+<ion-card no-margin>
+        <ion-card-title color="primary">
+            CARBURANT
+            <ion-item lines="none">Localisation : {{ data.carburant.localisation }}</ion-item>
+            <ion-item lines="none">Horaires : {{ data.carburant.horaire }}</ion-item>    
+            <ion-label color="medium">Essence : </ion-label>    
+            <ion-item lines="none" *ngFor="let i of data.carburant.essence">
+                {{i}}
+            </ion-item>
+        </ion-card-title> 
+</ion-card> 
+<ion-card no-margin>
+        <ion-card-title color="primary">
+            SERVICES
+            <ion-item lines="none">Ravitaillement : {{data.services.ravitaillement}}</ion-item>
+            <ion-item lines="none">Parking : {{ data.services.parking }}</ion-item>
+            <ion-item lines="none">Borne électrique : {{ data.services.borneElectrique }}</ion-item>  
+            <ion-label color="medium">Recyclage : </ion-label>
+            <ion-item lines="none" *ngFor="let i of data.services.recyclage">
+                {{ i }}
+              </ion-item> 
+        </ion-card-title> 
+</ion-card>  
+<ion-card no-margin>
+        <ion-card-title color="primary">
+            SANITAIRES
+            <ion-item lines="none">Sanitaires : {{ data.sanitaires.blocSanitaire }}</ion-item>
+            <ion-item lines="none">WC : {{ data.sanitaires.wc }}</ion-item>   
+            <ion-item lines="none">Douches : {{ data.sanitaires.douches }}</ion-item>
+            <ion-item lines="none">Mobilité réduite : {{ data.sanitaires.mobiliteReduite }}</ion-item>   
+        </ion-card-title>         
+</ion-card>
+</ion-content>

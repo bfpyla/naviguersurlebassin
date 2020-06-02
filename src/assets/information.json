@@ -1,0 +1,162 @@
+{
+    "items":[
+      {  
+        "force": "0",    
+        "children": [
+            {
+                "descriptif" : "Calme",
+                "vitesseNoeud" : "<1",
+                "vitesseKm" : "<1",
+                "observationEnMer" : "La mer est comme un mirroir.",
+                "observationATerre" : "Pas de vent, fumée verticale."
+            }    
+       ]
+      },
+      {  
+         "force": "1",     
+        "children": [
+          {
+              "descriptif" : "Très légère brise",
+              "vitesseNoeud" : "de 1 à 3",
+              "vitesseKm" : "de 1 à 3",
+              "observationEnMer" : "Quelques rides en écaille de poissons mais pas d'écume.",
+              "observationATerre" : "Très peu de vent, sa direction est relevée par la fumée qu'il entraîne, mais non par les girouettes."
+          }    
+       ]
+      },
+      {
+        "force": "2", 
+        "children": [
+          {
+          "descriptif" : "Légère brise",
+          "vitesseNoeud" : "de 4 à 6",
+          "vitesseKm" : "de 6 à 11",
+          "observationEnMer" : "Vaguelettes courtes aux crêtes d'apparence vitreuse, ne déferlant pas.",
+          "observationATerre" : "Le vent est perçu au visage, les feuilles frémissent, les girouettes tournent."
+          }    
+       ]  
+      },
+      {
+        "force": "3", 
+        "children": [
+          {
+          "descriptif" : "Petite brise",
+          "vitesseNoeud" : "de 7 à 10",
+          "vitesseKm" : "de 12 à 19",
+          "observationEnMer" : "Très petites vagues (environ 60 cm de haut), les crêtes commencent à déferler, les moutons apparaissent.",
+          "observationATerre" : "Les drapeaux légers se déploient, les feuilles et les rameaux sont sans cesse agités."
+          }    
+       ]  
+      },{
+        "force": "4", 
+        "children": [
+          {
+          "descriptif" : "Jolie brise",
+          "vitesseNoeud" : "de 11 à 16",
+          "vitesseKm" : "de 20 à 28",
+          "observationEnMer" : "Petites vagues s'allongeant, moutons nombreux.",
+          "observationATerre" : "Le vent soulève la poussière, les feuilles et les morceaux de papier, il agite les petites branches, les cheveux sont dérangés et les vetêments claquent."
+          }    
+       ]  
+      },
+      {
+        "force": "5",   
+        "children": [
+          {
+          "descriptif" : "Bonne brise",
+          "vitesseNoeud" : "de 17 à 21",
+          "vitesseKm" : "de 29 à 38",
+          "observationEnMer" : "Vagues modérées (2m de haut), nettement allongées, beaucoup de moutons, embruns.",
+          "observationATerre" : "Les yeux sont génés par des matières en l'air; les arbustes en feuilles commencent à se balancer; les vaguelettes se forment sur les plans d'eau."
+          }    
+       ]  
+      },
+      {
+        "force": "6",
+        "children": [
+          {
+          "descriptif" : "Vent frais",
+          "vitesseNoeud" : "de 22 à 27",
+          "vitesseKm" : "de 39 à 49",
+          "observationEnMer" : "Des lames se forment, les crêtes d'écume blanches'étendent, davantage d'embruns.",
+          "observationATerre" : "Les manches sont gonflés par les côtés, l'utilisation des parapluies devient difficile, les grandes branches sont agitées, les fils des fils électriques sifflent."
+          }    
+       ]  
+      },
+      {
+        "force": "7",   
+        "children": [
+          {
+          "descriptif" : "Grand frais",
+          "vitesseNoeud" : "de 28 à 33",
+          "vitesseKm" : "de 50 à 61",
+          "observationEnMer" : "La mer grossit en lames déferlantes, l'écume commence à être soufflée  en traînées dans le lit du vent.",
+          "observationATerre" : "La marche contre le vent devient pénible, les arbres sont agités en entier."
+          }    
+       ]  
+      },
+      {
+        "force": "8",  
+        "children": [
+          {
+          "descriptif" : "Coup de vent",
+          "vitesseNoeud" : "de 34 à 40",
+          "vitesseKm" : "de 62 à 74",
+          "observationEnMer" : "Les lames atteignent une hauteur de 5 m, tourbillons d'écume à la cr^te de lames, traînées d'écume.",
+          "observationATerre" : "La marche contre le vent est très difficile,le vent casse des rameaux."
+          }    
+       ]  
+      },
+      {
+        "force": "9",  
+        "children": [
+          {
+          "descriptif" : "Fort coup de vent",
+          "vitesseNoeud" : "de 41 à 47",
+          "vitesseKm" : "de 75 à 88",
+          "observationEnMer" : "Grosses lames déferlant en rouleaux, toubillons d'embruns arrachés aux lames, nettes traînées d'écume, visibilité réduite par les embruns.",
+          "observationATerre" : "Les enfants sont renversés, le vent arrache les tuyaux des cheminées et endommage les toitures."
+          }    
+       ]  
+      },
+      {
+        "force": "10",  
+        "children": [
+          {
+          "descriptif" : "Tempête",
+          "vitesseNoeud" : "de 48 à 55",
+          "vitesseKm" : "de 89 à 102",
+          "observationEnMer" : "très grosses lames déferlantes (9m de haut), écume en larges bancs formant des traînées blanches, visibilité réduite par les embruns.",
+          "observationATerre" : "Rarement observés à terre, les adultes sont renversés, les arbres sont déracinés, les habitations subissent d'importants dégâts."
+          }    
+       ]  
+      },
+      {
+        "force": "11", 
+        "children": [
+          {
+          "descriptif" : "Violente tempête",
+          "vitesseNoeud" : "de 56 à 63",
+          "vitesseKm" : "de 103 à 117",
+          "observationEnMer" : "Lames déferlantes d'une hauteur exceptionnelles, mer couverte d'écume blanche, visibilité réduite.",
+          "observationATerre" : "Très rarement observé à terre, ravages étendus."
+          }    
+       ]  
+      },
+      {
+        "force": "12",  
+        "children": [
+          {
+          "descriptif" : "Ouragan",
+          "vitesseNoeud" : "64 et plus",
+          "vitesseKm" : "118 et plus",
+          "observationEnMer" : "Lames déferlantes énormes (creux atteignant 14m et plus), mer entièrement blanche, air plein d'écume et d'embruns, visibilité très réduite.",
+          "observationATerre" : "Ravages désastreux, vioplence et destruction."
+          }    
+       ]  
+      }
+  
+
+
+ ]
+}

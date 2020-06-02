@@ -1,0 +1,32 @@
+
+  
+  
+  
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let item of this.aides" lines="none">
+        <div *ngIf="item.id ==  this.passedId">
+           <ion-card no-margin>
+              <ion-card-header>
+                 <img src= {{item.image}} />
+                 <ion-card-title>{{item.titre}}</ion-card-title>
+              </ion-card-header>        
+              <ion-card-content>
+                <ion-item lines="none" *ngFor="let i of item.descriptif">
+                  {{ i }}
+                </ion-item>
+              </ion-card-content>
+           </ion-card>
+         </div>
+
+      </ion-item>
+
+    </ion-list>
+    <ion-item button color="danger" (click)="closePopover()"> 
+      <ion-icon name="close" slot="start"></ion-icon>  
+      Fermer
+    </ion-item>
+    
+    
+  </ion-content> 
+  

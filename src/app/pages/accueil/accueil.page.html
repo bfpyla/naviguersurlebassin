@@ -1,0 +1,68 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Accueil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentActionSheet()">
+        <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/portArcachon.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>Bonjour</ion-card-subtitle>
+      <ion-card-title>Bienvenue sur le Bassin d'Arcachon</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Aide à la navigation sur le Bassin d'Arcachon.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card"> 
+    <ion-card-header>   
+    <ion-card-title>Ressources</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+        <ion-card class="plein-card"> 
+          <ion-item href="assets/pdf/Guide%20de%20la%20plaisance.pdf">
+          <ion-icon slot="start" color="medium" name="book"></ion-icon>
+          <ion-label>Guide de la plaisance</ion-label>
+        </ion-item>      
+      </ion-card>    
+      <ion-card class="plein-card">
+        <ion-item href="https://marine.meteoconsult.fr/meteo-marine/meteo-abords-du-port/ocean-atlantique/previsions-meteo-arcachon-127-0.php/">
+          <ion-icon slot="start" color="medium" name="sunny"></ion-icon>
+          <ion-label>Bulletin météo du jour</ion-label>
+        </ion-item>     
+      </ion-card>  
+      <ion-card class="plein-card">
+        <ion-item href= {{refMareeArcachon}} >
+          <ion-icon slot="start" color="medium" name="menu-outline"></ion-icon>
+          <ion-label>Marée Arcachon</ion-label>
+        </ion-item> 
+      </ion-card>
+      <ion-card class="plein-card">
+          <ion-item href= {{refMareeCapFerret}} >
+            <ion-icon slot="start" color="medium" name="menu-outline"></ion-icon>
+            <ion-label>Marée Cap Ferret</ion-label>
+          </ion-item> 
+        </ion-card>       
+        <ion-card class="plein-card">      
+        <ion-item href="http://geo.bassin-arcachon.com/e-navigation/index.html">
+          <ion-icon slot="start" color="medium" name="boat"></ion-icon>
+          <ion-label>Carte du Bassin d'Arcachon</ion-label>
+        </ion-item>
+      </ion-card> 
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,52 @@
+ion-content{
+    --background: var(ion-color-light);
+}
+
+.accordion-list{
+margin-bottom:4px;
+--ion-item-background:  #f5f8f2;
+.section, .section-active{
+    --min-height: 18px;
+}
+}
+.section{
+
+--ion-item-background:  #99ccff;
+--ion-item-color:  #000;
+ion-icon{
+    color: #000;
+ }
+}
+.section-active{
+--ion-item-background:  #2814dd;
+--ion-item-color:  #fff;
+font-weight: 600;
+ion-icon{
+   color: #fff;
+}
+}
+.child-list{
+padding: 0px;
+margin: 0px;
+.child, .child-active{
+    margin-bottom: 2px;
+}
+
+}
+.child{
+--ion-item-background:  #e6e7e8;
+--ion-item-color:  #000;
+
+}
+.child-active{
+--ion-item-background:  #fad86b;
+--ion-item-color:  #fff;
+
+ion-icon{
+   color: #fff;
+}
+}
+.echelledebeaufort-list{
+padding: 0px;
+margin: 0px;
+}

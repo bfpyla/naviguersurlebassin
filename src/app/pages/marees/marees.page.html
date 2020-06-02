@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Marées</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+      
+    <ion-card-title>Principales marées </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+       <ion-item href="https://marine.meteoconsult.fr/meteo-marine/horaires-maree-arcachon-1048-0.php/">
+       <ion-icon slot="start" color="medium" name="cellular-sharp"></ion-icon>
+       <ion-label>Marée Arcachon</ion-label>
+  </ion-item>     
+  <ion-item href="https://marine.meteoconsult.fr/meteo-marine/horaires-maree-cap-ferret-1047-0.php/">
+    <ion-icon slot="start" color="medium" name="cellular-sharp"></ion-icon>
+    <ion-label>Marée Cap Ferret</ion-label>
+  </ion-item>     
+  <ion-item (click)="informationsSheet()">
+    <ion-icon slot="start" color="medium" name="cellular-sharp"></ion-icon>
+    <ion-label>Marée autour du bassin</ion-label>
+  </ion-item>   
+  </ion-card-content>  
+</ion-card>
+</ion-content>

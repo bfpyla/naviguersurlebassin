@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="flip-container" #flipcontainer>
+    <div class="flipper">
+      <div class="front">
+          <ion-card>
+              <ion-card-header>
+                <ion-card-title>Identification</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+          
+                  <ion-item lines="none">
+                    <ion-label position="stacked">Email</ion-label>
+                    <ion-input type="email" placeholder="Entrer votre email" formControlName="email"></ion-input>
+                  </ion-item>
+          
+                  <ion-item lines="none">
+                    <ion-label position="stacked">Mot de passe</ion-label>
+                    <ion-input type="password" formControlName="password"></ion-input>
+                  </ion-item>
+
+                  <ion-button expand="block" type="submit" color="primary" [disabled]="!loginForm.valid"
+                  class="ion-padding-horizontal ion-margin-vertical">
+                    Se connecter
+                  </ion-button>
+                  <ion-button class="ion-padding-horizontal ion-margin-vertical" color="primary" expand="block" (click)="openReset()">
+                    Changer le mot de passe</ion-button>
+
+                  <ion-button expand="block" type="button" color="secondary" fill="outline"
+                  class="ion-padding-horizontal ion-margin-vertical" (click)="toggleRegister()">
+                Créer un compte
+                </ion-button>
+                </form>
+              </ion-card-content>
+            </ion-card>
+      </div>
+
+      <div class="back">
+          <ion-card>
+              <ion-card-header>
+                <ion-card-title>Nouveau compte</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <form [formGroup]="registerForm" (ngSubmit)="register()">
+          
+                  <ion-item lines="none">
+                    <ion-label position="stacked">Email</ion-label>
+                    <ion-input type="email" placeholder="Entrer vore email" formControlName="email"></ion-input>
+                  </ion-item>
+          
+                  <ion-item lines="none">
+                    <ion-label position="stacked">Nom</ion-label>
+                    <ion-input placeholder="Entrer votre nom" formControlName="name"></ion-input>
+                  </ion-item>
+          
+                  <ion-item lines="none">
+                    <ion-label position="stacked">Password</ion-label>
+                    <ion-input type="password" formControlName="password"></ion-input>
+                  </ion-item>
+        
+          
+                  <ion-button expand="block" type="submit" class="ion-padding-horizontal ion-margin-vertical"
+                  [disabled]="!registerForm.valid">
+                    Enregistrer
+                  </ion-button>
+
+                  <ion-button expand="block" type="button" color="secondary" fill="clear"
+                  class="ion-padding-horizontal ion-margin-vertical" (click)="toggleRegister()">
+                  <ion-icon name="arrow-back" slot="start"></ion-icon>
+                  Retour à l'identification
+                </ion-button>
+
+                </form>
+              </ion-card-content>
+            </ion-card>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

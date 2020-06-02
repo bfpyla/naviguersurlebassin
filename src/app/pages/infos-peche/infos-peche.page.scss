@@ -1,0 +1,33 @@
+.bg_color {
+    --background: rgb(19, 40, 233);
+}
+
+.accordion-list{
+margin-bottom:1px;
+--ion-item-background:  "primary";
+
+
+}
+.child-list{
+padding: 0px;
+margin-left: 0px;
+
+}
+
+.child-item{
+    padding: 0px;
+    margin: 0px;
+    --min-height: 1px;
+
+}
+ion-icon{
+   color: #000;
+}
+ion-slide {
+    max-height: 50%;
+    max-width: 60%;
+    margin: 36px 0;
+  }
+  .welcome-card {
+    background: rgba(255,255,255,0.5);
+}

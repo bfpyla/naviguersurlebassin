@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+
+    </ion-buttons>
+
+    <ion-title>Pêche</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class = "'bg_color">
+  <ion-card class="welcome-card">
+    <ion-card-subtitle lines="none">* Espèces soumises à marquage (ablation de la partie inférieure de la nageoire caudale</ion-card-subtitle>
+    <ion-card-subtitle lines="none">LJFL Longueur maxilaire inférieur bouche</ion-card-subtitle>
+    <ion-card-subtitle lines="none">LT Longueur totale</ion-card-subtitle>
+    <ion-card-subtitle>LC Longueur céphalothoracique</ion-card-subtitle>
+
+  </ion-card>  
+  <ion-slides [options]="sliderConfig">
+    <ion-slide *ngFor="let item of this.peche">
+      
+        <ion-card class="welcome-card">
+          <ion-card-header>
+            <ion-card-title>
+              {{item.categorie}}
+            </ion-card-title>
+            
+            <ion-card-content *ngFor="let child of item.children; let j = index;" class="child-list"> 
+             <ion-label>{{child.nom}} {{child.taille}} cm</ion-label>
+            </ion-card-content>
+          </ion-card-header>
+        </ion-card>
+    
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content> 

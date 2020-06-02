@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button text="Retour" color = "primary" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Details du balisage {{ data.nom }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src={{data.image}}></ion-img>
+  <ion-item lines="none">
+    {{ data.libelle }}
+  </ion-item>
+  <ion-item lines="none" *ngFor="let i of data.descriptif">
+    {{ i }}
+  </ion-item>
+</ion-content>
